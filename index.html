@@ -1,67 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Многопрофильная клиника «СОЮЗ» — Москва</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Клиника Союз — О клинике</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" href="style.css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Верхушка -->
-<header class="header">
-  <div class="container header__inner">
-    <a href="#" class="logo">
-      <span class="logo__mark">С</span>
-      <span class="logo__text">СОЮЗ<small>многопрофильная клиника</small></span>
-    </a>
-
-    <nav class="nav">
-      <a href="#about">О клинике</a>
-      <a href="#directions">Направления</a>
-      <a href="#doctors">Врачи</a>
-      <a href="#news">Новости</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
-
-    <div class="header__right">
-      <a href="tel:+74992292300" class="header__phone">7 499 229-23-00</a>
-      <button class="btn btn--primary js-open-modal">Записаться</button>
+<header class="site-header">
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__locations">
+        <div class="toploc"><span class="dot-red"></span><span>м. Сокольники · ул. Матросская Тишина, д. 14а</span></div>
+        <div class="toploc"><span class="dot-green"></span><span>м. Аэропорт · ул. Усиевича, д. 8, стр. 1а</span></div>
+      </div>
+      <div class="topbar__hours">С 9 до 21, КТ/МРТ/рентген — 24 ч · Бесплатная парковка</div>
     </div>
-
-    <button class="burger js-burger" aria-label="Меню">
-      <span></span><span></span><span></span>
-    </button>
+  </div>
+  <div class="header-bar">
+    <a class="logo" href="#">
+      <span class="logo__text">С<span class="logo__ring"></span>ЮЗ</span>
+      <span class="logo__tagline">Многопрофильная клиника</span>
+    </a>
+    <nav class="nav">
+      <a class="navlink" href="#">Услуги</a>
+      <a class="navlink" href="#">Врачи</a>
+      <a class="navlink" href="#">Пациентам</a>
+      <a class="navlink" href="#">Цены</a>
+      <a class="navlink nav-link--active" href="#">О клинике</a>
+      <a class="navlink" href="#">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn" href="#" aria-label="Поиск">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+      </a>
+      <a class="header-phone" href="tel:+74992297254">+7 (499) 229-72-54</a>
+      <a class="header-cta" href="#">Записаться</a>
+      <button class="burger" aria-label="Меню">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
   </div>
 </header>
 
 <section class="hero">
-  <div class="container hero__inner">
+  <div class="breadcrumbs"><a href="#">Главная</a> &nbsp;/&nbsp; <span class="breadcrumbs__current">О клинике</span></div>
+  <div class="hero__inner">
     <div class="hero__content">
-      <p class="label">Москва · Сокольники · Аэропорт</p>
-      <h1 class="hero__title">Медицина, которой доверяют</h1>
-      <p class="hero__text">
-        Более 40 лет помогаем восстанавливать здоровье. Два филиала в Москве,
-        собственный стационар, лаборатория и банк крови.
-        КТ, МРТ и рентген — круглосуточно.
-      </p>
+      <span class="badge">О клинике</span>
+      <h1 class="hero__title">Более 40 лет помогаем восстанавливать здоровье</h1>
+      <p class="hero__text">«СОЮЗ» — брендовое название медицинского центра, который за 40 лет существования из стоматологической поликлиники (стоматологический центр № 17) вырос в многопрофильную клинику со стационаром, где сегодня работают более 100 специалистов различного профиля.</p>
       <div class="hero__actions">
-        <button class="btn btn--primary js-open-modal">Записаться на приём</button>
-        <a href="#directions" class="btn btn--ghost">Направления</a>
+        <a class="btn-primary" href="#">Записаться на приём</a>
+        <a class="btn-outline" href="#">Схема проезда</a>
       </div>
     </div>
-
-    <div class="hero__stats">
-      <div class="stat"><span>40+</span><small>лет на рынке</small></div>
-      <div class="stat"><span>100+</span><small>врачей</small></div>
-      <div class="stat"><span>24/7</span><small>диагностика</small></div>
+    <div class="hero__media">
+      <div class="hero__image-wrap">
+        <img class="img-cover" src="images/about1.jpg" alt="Врачи клиники обсуждают результаты обследования">
+      </div>
+      <div class="stat-years">
+        <span class="stat-years__value">40 лет</span>
+        <span class="caption">на рынке медицинских услуг</span>
+      </div>
+      <div class="stat-count">
+        <span class="stat-count__value">100+</span>
+        <span class="stat-count__label">специалистов</span>
+      </div>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="directions">
+    <div class="directions__head">
+      <h2 class="directions__title">Направления</h2>
+      <div class="tabs">
+        <button class="tab" data-tab="diag" aria-selected="true">Диагностика</button><button class="tab" data-tab="poly" aria-selected="false">Поликлиника</button><button class="tab" data-tab="stat" aria-selected="false">Стационар</button>
+      </div>
+    </div>
 
+    <div class="panel" id="panel-diag">
+      <div class="directions__body">
+        <div class="direction-tiles">
+          <a class="lift direction-tile" href="#">УЗИ<span class="arrow-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+          <a class="lift direction-tile" href="#">МРТ<span class="arrow-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+          <a class="lift direction-tile" href="#">ЭКГ<span class="arrow-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+          <a class="lift direction-tile" href="#">Рентген<span class="arrow-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+          <a class="lift direction-tile" href="#">КТ<span class="arrow-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+          <a class="lift direction-tile" href="#">Колоно&shy;скопия<span class="arrow-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+        </div>
+        <div class="chips">
+          <a class="lift chip" href="#">Цифровая дерматоскопия FotoFinder</a>
+          <a class="lift chip" href="#">Биоимпедансный анализ</a>
+          <a class="lift chip" href="#">Кольпоскопия матки</a>
+          <a class="lift chip" href="#">Биопсия</a>
+          <a class="lift chip" href="#">Клинические исследования</a>
+          <a class="lift chip" href="#">Гастроскопия</a>
+          <a class="lift chip" href="#">Холтеровское мониторирование</a>
+          <a class="lift chip" href="#">Дерматоскопия</a>
+          <a class="lift chip" href="#">Гистеросальпингография</a>
+          <a class="lift chip" href="#">Онкоморфологические исследования</a>
+          <a class="lift chip" href="#">Иммунофенотипирование</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-poly" hidden>
+      <div class="panel-grid">
+        <a class="lift panel-card" href="#"><span class="panel-card__label">Поликлиника</span><span class="panel-card__title">Амбулаторное лечение</span></a>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-stat" hidden>
+      <div class="panel-grid">
+        <a class="lift panel-card" href="#"><span class="panel-card__label">Стационар</span><span class="panel-card__title">Хирургический центр</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2 class="section-title">Преимущества</h2>
+    <p class="section-lead">У нас есть всё, чтобы позволить квалифицированным врачам эффективно работать</p>
+  </div>
+  <div class="advantages">
+    <div class="columns-row">
+      <article class="adv-card">
+        <div class="adv-card__body">
+          <div class="adv-card__text">
+            <span class="adv-number">01</span>
+            <h3 class="adv-card__title">Объединили лучшее</h3>
+            <p class="adv-card__desc">Более 40 лет мы помогаем людям восстанавливать здоровье и не уступать болезням ни одной из возможностей, которые даёт жизнь здоровому человеку.</p>
+          </div>
+          <a class="btn-dark" href="#">Подробнее</a>
+        </div>
+        <div class="adv-card__image"><img class="img-cover" src="images/about1.jpg" alt="Врачи клиники"></div>
+      </article>
+      <article class="adv-card">
+        <div class="adv-card__body">
+          <div class="adv-card__text">
+            <span class="adv-number">02</span>
+            <h3 class="adv-card__title">Специалисты высочайшего уровня</h3>
+            <p class="adv-card__desc">Наши врачи — ведущие сотрудники кафедр медицинских ВУЗов Москвы: кандидаты и доктора медицинских наук с многолетним опытом работы. Их знания и умения, помноженные на высококлассное оснащение клиники, позволяют лечить эффективно, безопасно, комфортно.</p>
+          </div>
+          <a class="btn-dark" href="#">Подробнее</a>
+        </div>
+        <div class="adv-card__image"><img class="img-cover" src="images/about2.jpg" alt="Врачи за работой с документами"></div>
+      </article>
+    </div>
+    <div class="cards-grid">
+      <a class="lift adv-small" href="#">
+        <span class="adv-number">03</span>
+        <span class="adv-small__footer"><span class="adv-small__title">Собственная лаборатория</span><span class="arrow-btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
+      </a>
+      <a class="lift adv-small" href="#">
+        <span class="adv-number">04</span>
+        <span class="adv-small__footer"><span class="adv-small__title">Стационар экспертного уровня</span><span class="arrow-btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
+      </a>
+      <a class="lift adv-small" href="#">
+        <span class="adv-number">05</span>
+        <span class="adv-small__footer"><span class="adv-small__title">Собственный банк крови</span><span class="arrow-btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="doctors-head">
+    <h2 class="section-title">О врачах</h2>
+    <div class="doctors-tabs">
+      <button class="doctors-tab-active">Специалисты</button>
+      <button class="doctors-tab">Мы на ТВ</button>
+      <button class="doctors-tab">Отзывы</button>
+    </div>
+  </div>
+  <div class="doctors-grid">
+    <article class="lift doctor-card">
+      <div class="doctor-card__photo"><img class="img-cover-top" src="images/doc1.jpg" alt="Полиров Андрей Альбертович"></div>
+      <div class="doctor-card__info">
+        <h3 class="doctor-card__name">Полиров Андрей Альбертович</h3>
+        <p class="doctor-card__role">Главный врач, анестезиолог-реаниматолог, к.м.н.</p>
+      </div>
+    </article>
+    <article class="lift doctor-card">
+      <div class="doctor-card__photo"><img class="img-cover-top" src="images/doc2.jpg" alt="Леонова Марина Леонидовна"></div>
+      <div class="doctor-card__info">
+        <h3 class="doctor-card__name">Леонова Марина Леонидовна</h3>
+        <p class="doctor-card__role">Терапевт-гастроэнтеролог, зам. главного врача, зав. поликлиникой</p>
+      </div>
+    </article>
+    <article class="lift doctor-card">
+      <div class="doctor-card__photo"><img class="img-cover-top" src="images/doc3.jpg" alt="Вотяков Олег Николаевич"></div>
+      <div class="doctor-card__info">
+        <h3 class="doctor-card__name">Вотяков Олег Николаевич</h3>
+        <p class="doctor-card__role">Хирург, проктолог, флеболог, высшая категория, зам. главного врача, зав. стационаром</p>
+      </div>
+    </article>
+    <article class="lift doctor-card">
+      <div class="doctor-card__photo"><img class="img-cover-top" src="images/doc4.jpg" alt="Фархат Файяд Ахмедович"></div>
+      <div class="doctor-card__info">
+        <h3 class="doctor-card__name">Фархат Файяд Ахмедович</h3>
+        <p class="doctor-card__role">Врач-нейрохирург, доктор медицинских наук, профессор кафедры оперативной хирургии МГМСУ</p>
+      </div>
+    </article>
+  </div>
+  <div class="doctors-footer">
+    <div class="dots" aria-hidden="true"><span class="dot-active"></span><span class="dot"></span><span class="dot"></span></div>
+    <a class="all-doctors-link" href="#">Все врачи нашей клиники<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16181D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="contact-chief">
+    <div class="contact-chief__content">
+      <span class="badge-accent">Прямая связь</span>
+      <h2 class="contact-chief__title">Прямая связь с главным врачом</h2>
+      <p class="contact-chief__text">Если никто не смог ответить на ваш вопрос и решить вашу проблему — напишите лично главному врачу.</p>
+      <a class="btn-write" href="#">Написать</a>
+    </div>
+    <div class="contact-chief__person">
+      <div class="contact-chief__photo"><img class="img-cover-top" src="images/doc1.jpg" alt="Полиров А.А., главный врач"></div>
+      <div class="person-info"><span class="person-name">Полиров А.А.</span><span class="person-role">Главный врач</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="columns-row">
+    <div class="certificates">
+      <div class="certificates__head">
+        <h2 class="certificates__title">Сертификаты</h2>
+        <a class="link-more" href="#">Все сертификаты</a>
+      </div>
+      <div class="certificates__logos">
+        <div class="certificate-logo"><img class="img-contain" src="images/esmo.png" alt="ESMO"></div>
+        <div class="certificate-logo"><img class="img-contain" src="images/eurama.png" alt="EuRAMA"></div>
+        <div class="certificate-logo"><img class="img-contain" src="images/wcrf.png" alt="World Cancer Research Fund International"></div>
+      </div>
+    </div>
+    <div class="quality-card">
+      <span class="quality-card__label">Независимая оценка</span>
+      <p class="quality-card__text">Независимая оценка качества условий оказания услуг медицинскими организациями</p>
+      <a class="quality-card__btn" href="#">Оценить</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="partners-title">Наши партнёры</h2>
+  <a class="lift partner-banner" href="#"><img class="partner-banner__img" src="images/partner.jpg" alt="Московская глазная клиника — все методы диагностики, лазерная коррекция зрения"></a>
+</section>
+
+<section class="news">
+  <div class="list-head">
+    <h2 class="section-title">Новости</h2>
+    <a class="link-more" href="#">Все новости</a>
+  </div>
+  <div class="cards-grid">
+    <a class="lift post-card" href="#">
+      <div class="post-card__image"><img class="img-cover" src="images/news1.jpg" alt=""></div>
+      <div class="post-card__body"><span class="caption">28.01.2025</span><span class="post-card__title">Круглосуточная диагностика в «Союзе»</span></div>
+    </a>
+    <a class="lift post-card" href="#">
+      <div class="post-card__image--contain"><img class="post-card__img-contain" src="images/news2.jpg" alt=""></div>
+      <div class="post-card__body"><span class="caption">27.12.2024</span><span class="post-card__title">График работы Клиник Союз на новогодних праздниках 2025</span></div>
+    </a>
+    <a class="lift post-card" href="#">
+      <div class="post-card__image"><img class="img-cover-top" src="images/news3.jpg" alt=""></div>
+      <div class="post-card__body"><span class="caption">05.02.2025</span><span class="post-card__title">Онколог рассказал о противораковых вакцинах</span></div>
+    </a>
+  </div>
+</section>
+
+<section class="blog">
+  <div class="list-head">
+    <h2 class="section-title">Блог</h2>
+    <a class="link-more" href="#">Все записи</a>
+  </div>
+  <div class="cards-grid">
+    <a class="lift post-card" href="#">
+      <div class="post-card__image"><img class="img-cover" src="images/blog1.jpg" alt=""></div>
+      <div class="post-card__body"><span class="caption">08.04.2025</span><span class="post-card__title">Гиперпаратиреоз: неизвестный враг</span></div>
+    </a>
+    <a class="lift post-card" href="#">
+      <div class="post-card__image"><img class="img-cover" src="images/blog2.jpg" alt=""></div>
+      <div class="post-card__body"><span class="caption">12.03.2025</span><span class="post-card__title">Как просмотреть МРТ, КТ или рентгеновские снимки</span></div>
+    </a>
+    <a class="lift post-card" href="#">
+      <div class="post-card__image"><img class="img-cover" src="images/blog3.jpg" alt=""></div>
+      <div class="post-card__body"><span class="caption">28.02.2025</span><span class="post-card__title">МРТ рядом со мной: 3 риска диагностики в ближайшем центре</span></div>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">С<span class="logo__ring"></span>ЮЗ</span>
+        <span class="footer__about">Многопрофильная клиника со стационаром. Более 40 лет в Москве.</span>
+        <div class="footer__socials">
+          <a class="social-link" href="#">VK</a>
+          <a class="social-link" href="#">OK</a>
+          <a class="social-link" href="#">YouTube</a>
+          <a class="social-link" href="#">Skype</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <span class="footer__heading">Адрес</span>
+        <span>Москва, м. Сокольники,<br>ул. Матросская Тишина, д. 14а</span>
+        <span>Москва, м. Аэропорт,<br>ул. Усиевича, д. 8, стр. 1а</span>
+      </div>
+      <div class="footer__col">
+        <span class="footer__heading">Контакты</span>
+        <a class="footer__phone" href="tel:+74992297254">+7 (499) 229-72-54</a>
+        <a href="tel:88007758633">8 800 775-86-33</a>
+        <a href="mailto:info@klinikasoyuz.ru">info@klinikasoyuz.ru</a>
+      </div>
+      <div class="footer__menu">
+        <span class="footer__heading">Меню</span>
+        <div class="footer__menu-grid">
+          <a href="#">Услуги</a><a href="#">Врачи</a>
+          <a href="#">Пациентам</a><a href="#">Статьи</a>
+          <a href="#">Цены</a><a href="#">О клинике</a>
+          <a href="#">Видео</a><a href="#">Партнёры</a>
+          <a href="#">Контакты</a><span></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__docs">
+        <a class="footer__doc-link" href="#">Обработка персональных данных</a>
+        <a class="footer__doc-link" href="#">МРТ позвоночника</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
